@@ -1,8 +1,11 @@
 AWS EC2 with VPC and EBS using Terraform Data Sources
 This repository demonstrates how to use Terraform to deploy an EC2 instance within an existing VPC and Subnet, and attach an EBS volume to the instance using data sources to reference existing AWS resources.
+
 ![image alt]([image_url](https://github.com/Maarioon/EC2_VPC_EBS_resources_datasource2/blob/089edf5edec1fb6cef7e49f77c806d7987872df2/How_to_create_an_Ec2%2CVPC%2CEBS_with_Terraform%20(1).png)
+
 Leveraging Terraform Data Sources to Deploy an EC2 Instance with VPC and EBS
 ![image alt]([image_url](https://github.com/Maarioon/EC2_VPC_EBS_resources_datasource2/blob/42fae16c008398a1563d6fc1a955ef0298ef0ef5/EC2_VPC_EBS_Terraform.drawio.png)
+
 When managing cloud infrastructure, you often need to use existing resources in your cloud environment rather than creating everything from scratch. This is where Terraform's data sources come in handy. In this guide, I'll walk you through using data sources to deploy an EC2 instance within a VPC, and attach an EBS volume, all while leveraging existing AWS resources.
 
 Why Use Data Sources in Terraform?
