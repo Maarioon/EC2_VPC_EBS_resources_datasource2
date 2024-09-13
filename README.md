@@ -73,7 +73,7 @@ data "aws_ami" "latest_ami" {
     values = ["amzn2-ami-hvm-*-x86_64-gp2"]
   }
 
-  owners = ["137112412989"] # Amazon's owner ID for public AMIs
+  owners = ["137112412989"] 
 }
 
 ```
@@ -101,8 +101,7 @@ Next, we'll attach an EBS volume to our EC2 instance. This volume can also be cr
 ```
 resource "aws_ebs_volume" "web_data" {
   availability_zone = aws_instance.web_server.availability_zone
-  size              = 10 # 10GB
-
+  size              = 10 
   tags = {
     Name = "web-data"
   }
